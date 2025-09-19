@@ -1,0 +1,16 @@
+Configure Ownership and Permissions (This is a Bad Idea)
+
+sudo chown ubuntu /var/www/html
+
+sudo chmod 777 /var/www/html
+
+
+
+
+Cron Job Configuration
+
+sudo crontab -e
+
+*/10 * * * * nmap 192.168.1.0/24 -oN /var/www/html/nmap.html
+
+
